@@ -1,47 +1,26 @@
 # Arun Kumar — Personal Portfolio
 
-A responsive, minimal-white personal portfolio built with HTML, CSS, and JavaScript. It is intentionally framework-free, so it is lightweight and straightforward to deploy on Vercel.
+A responsive, framework-free portfolio and online résumé built with HTML, CSS and JavaScript for deployment on Vercel.
 
-## Before publishing
-
-1. Open `index.html` and replace `YOUR_EMAIL@example.com` with the professional email address you want displayed.
-2. Replace the generic LinkedIn URL (`https://www.linkedin.com/`) with your profile URL.
-3. Review all wording and confirm it reflects your experience accurately.
-4. Add verified case-study details and only share campaign numbers or client assets you have permission to publish.
-5. If desired, add a resume PDF and a link to it in the hero or contact area.
-
-## Preview locally
-
-Open `index.html` in a browser. No build step is required.
+## Files
+- `index.html` — content, résumé, experience, projects, skills and contact sections
+- `styles.css` — responsive editorial design, scroll reveals, animated visual details
+- `script.js` — mobile navigation, reading progress bar, and scroll-triggered reveals
+- `assets/Arun-Kumar-Resume.pdf` — résumé download
 
 ## Deploy to Vercel
+1. Upload the contents of this folder to the root of the GitHub repository connected to Vercel. Keep `index.html`, `styles.css`, `script.js`, and the `assets` folder at the repository root.
+2. In Vercel, set Framework Preset to `Other`.
+3. Keep Build Command, Output Directory, Install Command, and Development Command empty. Root Directory should be `./` (or blank if Vercel interprets blank as repository root).
+4. Commit/push the changes. Vercel should automatically create a deployment.
 
-### Option A — GitHub (recommended)
-1. Create a new repository on GitHub, for example `arun-portfolio`.
-2. Upload `index.html`, `styles.css`, `script.js`, and this README to the repository root.
-3. Sign in to Vercel and choose **Add New → Project**.
-4. Import the repository. As this is a static site, no framework preset or build command is needed. Leave the output directory empty/default and deploy.
-5. Vercel will provide a public `*.vercel.app` URL.
+## Before public sharing
+- Review all contact details and the résumé PDF.
+- The Meta Ads screenshots show two separate account summaries; they are deliberately not combined.
+- The pregnancy-yoga figures are calculated from 10 visible rows only and are marked provisional.
+- Google Ads metrics are from the account overview screenshot for the displayed date range; they are not attributed to one campaign.
+- Messaging conversations are not equivalent to unique leads or paid enrolments. Paid enrolment data was only partially available.
+- Confirm the reporting periods and permission to publish campaign/account metrics before making the site public.
 
-### Option B — Vercel CLI
-Install Node.js, then run:
-
-```bash
-npm install -g vercel
-cd arun-portfolio
-vercel
-```
-
-Follow the CLI prompts. For production deployment, run `vercel --prod`.
-
-## Design notes
-
-- Responsive navigation for mobile
-- Semantic sections and basic metadata
-- Reduced-motion support
-- No external JavaScript dependencies
-- Google Fonts are loaded from Google Fonts; system fallbacks are included
-
-## Current status
-
-This is a starter portfolio, not yet publication-ready. Contact links and project case studies must be reviewed and completed before sharing with recruiters or clients.
+## Motion and accessibility
+Scroll reveal animations use `IntersectionObserver`; the site respects `prefers-reduced-motion`. No framework or build step is required.
