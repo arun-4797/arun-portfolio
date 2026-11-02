@@ -1,27 +1,41 @@
-# Arun Kumar — Personal Portfolio
+# Arun Kumar — Portfolio
 
-A responsive, framework-free portfolio and online résumé built with HTML, CSS and JavaScript for deployment on Vercel.
-
-## Files
-- `index.html` — content, résumé, experience, projects, skills and contact sections
-- `styles.css` — responsive editorial design, scroll reveals, animated visual details
-- `script.js` — mobile navigation, reading progress bar, and scroll-triggered reveals
-- `assets/Arun-Kumar-Resume.pdf` — résumé download
+A responsive, static portfolio built with HTML, CSS and vanilla JavaScript. The visual direction is a hybrid editorial identity: warm paper tones, restrained sage accents, deep-green performance panels and rich scroll-driven storytelling.
 
 ## Deploy to Vercel
-1. Upload the contents of this folder to the root of the GitHub repository connected to Vercel. Keep `index.html`, `styles.css`, `script.js`, and the `assets` folder at the repository root.
-2. In Vercel, set Framework Preset to `Other`.
-3. Keep Build Command, Output Directory, Install Command, and Development Command empty. Root Directory should be `./` (or blank if Vercel interprets blank as repository root).
-4. Commit/push the changes. Vercel should automatically create a deployment.
 
-## Before public sharing
-- Review all contact details and the résumé PDF.
-- The Meta Ads screenshots show two separate account summaries; they are deliberately not combined.
-- The separate pregnancy-yoga subset has been removed at the user's request; Meta Ads account summaries remain separate.
-- Google Ads screenshots are attributed by the user to Attica Gold Company and show Jan 29–Jul 11, 2024 reporting. The overview reports 4.12K clicks, 90K impressions, 985 conversions (calls or other contact actions), and ₹29K spend. Verify the source export and attribution before public use.
-- Messaging conversations are not equivalent to unique leads or paid enrolments. Paid enrolment data was only partially available.
-- YouTube channel work covers SEO, titles, descriptions, thumbnails and channel optimization for Story Master India (formerly Gold Monk) and Mister Maga Official (formerly Jamadagni), which the user helped optimize through monetization. Yogakulam website work included collaborative redesign ideas, selected page elements, content changes and on-page SEO; do not claim sole ownership of the full redesign. No unsupported analytics are claimed.
-- Confirm the reporting periods and permission to publish campaign/account metrics before making the site public.
+1. Extract this ZIP.
+2. Create a new GitHub repository (or replace the contents of your existing `arun-4797/arun-portfolio` repository).
+3. Upload the contents of this folder to the repository root. `index.html`, `styles.css`, `script.js` and `assets/` should sit at the root level.
+4. In Vercel, choose **Add New → Project**, import the GitHub repository.
+5. Framework Preset: **Other**. Build Command: leave empty. Output Directory: `.`. Install Command: leave empty.
+6. Deploy. Future GitHub pushes will trigger deployments automatically.
 
-## Motion and accessibility
-Scroll reveal animations use `IntersectionObserver`; the site respects `prefers-reduced-motion`. No framework or build step is required.
+No build step or package installation is required.
+
+## Animation
+
+GSAP 3.12.5 and ScrollTrigger are loaded from jsDelivr. ScrollTrigger powers scroll-linked transitions and project storytelling on larger screens. Mobile uses a simpler natural-flow layout for readability and performance. Users with `prefers-reduced-motion` enabled receive the non-animated version.
+
+GSAP ScrollTrigger documentation: https://gsap.com/docs/v3/Plugins/ScrollTrigger/
+
+## Included
+
+- `index.html` — full portfolio content and metadata
+- `styles.css` — responsive styling and visual system
+- `script.js` — scroll progress, navigation and animation behaviour
+- `assets/Arun-Kumar-Resume.pdf` — supplied résumé PDF
+
+## Before publishing
+
+- Confirm that the phone number and email are still correct.
+- The supplied résumé PDF is linked in the hero and contact sections.
+- Meta account summaries are intentionally displayed as two separate accounts, not combined.
+- Yogakulam Bengaluru Google Ads and Attica Gold Company Google Ads are separate projects.
+- Platform figures are transcribed from screenshots you supplied. They are not independently audited. Google Ads reported conversions are not described as verified sales.
+- The dashboard charts and website preview panels are illustrative visualisations, not original platform exports or screenshots.
+- YouTube channel names shown are their current public names; the portfolio explains the earlier names and that your involvement preceded the rebrand.
+
+## Editing
+
+Update copy in `index.html`; colours and layout in `styles.css`; animation timing and behaviour in `script.js`. The project is dependency-free apart from the externally hosted Google Fonts and GSAP CDN scripts.
