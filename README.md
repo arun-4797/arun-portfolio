@@ -1,6 +1,6 @@
 # Arun Kumar — Portfolio
 
-A responsive, static portfolio built with HTML, CSS and vanilla JavaScript. The visual direction is a hybrid editorial identity: warm paper tones, restrained sage accents, deep-green performance panels and rich scroll-driven storytelling.
+A responsive, static portfolio built with HTML, CSS and vanilla JavaScript. The visual direction is a hybrid editorial identity: warm ivory, midnight navy, muted teal and champagne accents and rich scroll-driven storytelling.
 
 ## Deploy to Vercel
 
@@ -39,3 +39,7 @@ GSAP ScrollTrigger documentation: https://gsap.com/docs/v3/Plugins/ScrollTrigger
 ## Editing
 
 Update copy in `index.html`; colours and layout in `styles.css`; animation timing and behaviour in `script.js`. The project is dependency-free apart from the externally hosted Google Fonts and GSAP CDN scripts.
+
+
+## Employer-name update
+The current Digital Marketing Specialist role is listed as **Yogakulam Academy** (January 2024–Present), replacing the earlier combined label Yogakulam Academy. The three supplied CVs were reviewed; the latest specialist résumé was used as the primary source for experience and skills, with older CVs used only to confirm consistent employment, education and language details.
