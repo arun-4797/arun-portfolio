@@ -1,6 +1,6 @@
 # Arun Kumar — Portfolio
 
-A responsive, static portfolio built with HTML, CSS and vanilla JavaScript. The visual direction is a hybrid editorial identity: warm ivory, midnight navy, muted teal and champagne accents and rich scroll-driven storytelling.
+A responsive, static portfolio built with HTML, CSS and vanilla JavaScript. The visual direction is a hybrid editorial identity: cinematic black, graphite, silver-grey and restrained champagne accents and rich scroll-driven storytelling.
 
 ## Deploy to Vercel
 
@@ -43,3 +43,7 @@ Update copy in `index.html`; colours and layout in `styles.css`; animation timin
 
 ## Employer-name update
 The current Digital Marketing Specialist role is listed as **Yogakulam Academy** (January 2024–Present), replacing the earlier combined label Yogakulam Academy. The three supplied CVs were reviewed; the latest specialist résumé was used as the primary source for experience and skills, with older CVs used only to confirm consistent employment, education and language details.
+
+
+## Immersive dark edition
+This edition uses near-black surfaces, graphite panels and restrained champagne accents. Large-screen project chapters use extended scroll scenes and linked visual transitions. Mobile uses natural document flow for readability. Reduced-motion preferences disable the cinematic sequence.
